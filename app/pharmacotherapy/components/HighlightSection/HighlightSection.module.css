@@ -1,0 +1,108 @@
+/* ===== FULL WIDTH BACKGROUND ===== */
+.fullSection {
+    width: 100%;
+    background: linear-gradient(180deg, #f4f5f3, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ลายเฉียง */
+.fullSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(120deg,
+            rgba(0, 0, 0, 0.03) 0px,
+            rgba(0, 0, 0, 0.03) 2px,
+            transparent 2px,
+            transparent 14px);
+    pointer-events: none;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: clamp(40px, 8vw, 80px) clamp(10px, 3vw, 20px);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== HEADER ===== */
+.headerArea {
+    text-align: center;
+    margin-bottom: clamp(20px, 5vw, 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.smallTitle {
+    font-size: clamp(10px, 1.2vw, 14px);
+    color: #888;
+}
+
+.midTitle {
+    font-size: clamp(14px, 1.8vw, 18px);
+    font-weight: 600;
+    color: #444;
+}
+
+.bigTitle {
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 800;
+    color: #222;
+}
+
+.subTitle {
+    font-size: clamp(12px, 1.4vw, 15px);
+    color: #666;
+    max-width: 700px;
+    margin: 10px auto 0;
+    line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: clamp(4px, 1.5vw, 16px);
+}
+
+/* COLUMN */
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4px, 1.5vw, 16px);
+}
+
+/* SUB GRID */
+.subGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(4px, 1.5vw, 16px);
+}
+
+/* ===== IMAGE WRAPPERS ===== */
+.mainImgWrapper {
+    height: 100%;
+}
+
+.tallImgWrapper {
+    height: 100%;
+}
+
+/* ===== IMAGE ===== */
+.highlightImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: clamp(8px, 1.5vw, 20px);
+    display: block;
+}
+
+/* RESPONSIVE */
+/* 
+NOTE: Grid layout (3 columns) is preserved across all screens per user request. 
+Fluid units handle scaling without snapping to single column.
+*/
