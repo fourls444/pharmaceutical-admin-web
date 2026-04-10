@@ -5,10 +5,10 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import styles from "./CollegesSection.module.css";
 
 const CARDS = [
-    { id: 1, src: "/images/cardslice/cards1.jpg" },
-    { id: 2, src: "/images/cardslice/cards2.jpg" },
-    { id: 3, src: "/images/cardslice/cards3.jpg" },
-    { id: 4, src: "/images/cardslice/cards4.jpg" },
+    { id: 1, src: "/images/highlight/cards1.jpg" },
+    { id: 2, src: "/images/highlight/cards2.jpg" },
+    { id: 3, src: "/images/highlight/cards3.jpg" },
+    { id: 4, src: "/images/highlight/cards4.jpg" },
     
 ];
 
